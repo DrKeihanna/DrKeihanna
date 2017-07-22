@@ -11,7 +11,7 @@ var query = (function () {/*
 SELECT DISTINCT ?s ?label ?point ?update 
 WHERE
 {?s rdfs:label ?label ;
-     wdt:P131* wd:Q1490 ;
+     wdt:P131* wd:Q120730 ;
      schema:dateModified ?update;
      wdt:P625 ?point.
   FILTER(lang(?label)="ja" )

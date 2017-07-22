@@ -1,6 +1,6 @@
 function showMAP(data,mapid){
-	   var lat            = 35.678056;
-	   var lon            = 139.714722;
+	   var lat            = 34.759966666;
+	   var lon            = 135.791938888;
 
    // 位置とズームを決めてマップを描画
    var map = L.map(mapid,{
