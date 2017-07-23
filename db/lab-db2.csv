@@ -1,0 +1,54 @@
+会社名,住所,URL,lat,long,category
+けいはんなプラザ,京都府相楽郡精華町光台１丁目７番地,http://www.keihanna-plaza.co.jp/,34.744736,135.764786,
+（株）国際電気通信基礎技術研究所（ATR）,京都府相楽郡精華町光台２丁目２番地２,http://www.atr.jp,34.743763,135.766052,Denki;Robot
+国立国会図書館関西館,京都府相楽郡精華町精華台８-1-3,http://www.ndl.go.jp/jp/service/kansai/index.html,34.743389,135.769974,
+（公財）国際高等研究所（IIAS）,京都府木津川市木津川台９丁目３番地,http://www.iias.or.jp/,34.741413,135.77652,Robot
+（公財）地球環境産業技術研究機構（RITE）,京都府木津川市木津川台９丁目２番地,http://www.rite.or.jp,34.741642,135.778488,Seikatsu;Kagaku;
+同志社大学 （学研都市キャンパス）,京都府木津川市木津川台4丁目1-1,http://www.doshisha.ac.jp/,34.747684,135.785995,Seikatsu;Kikai;Butsuri
+オムロン（株）京阪奈イノベーションセンタ,京都府木津川市木津川台9丁目１,http://www.omron.co.jp/r_d/lab/keihanna,34.739983,135.777084,Kikai;Denki;Robot;Seikatsu;Unyu
+けいはんな記念公園,京都府相楽郡精華町精華台６丁目１番地,http://keihanna-park.net/,34.748211,135.772736,
+（株）井上製作所,京都府相楽郡精華町精華台7丁目4番地3,http://www.inoue-seisakusyo.co.jp,34.748047,135.783798,Kikai
+ダイナミックツール （株）,京都府相楽郡精華町精華台7丁目4番地6,http://dynamictools.co.jp,34.748695,135.785126,Kikai
+明和ゴム工業（株）京都生産技術センター,京都府相楽郡精華町精華台9丁目1番地13,http://www.meiwa-rubber.co.jp,34.748722,135.771149,Kagaku
+東英産業（株）,京都府相楽郡精華町精華台9丁目1番地1,http://www.toeisangyo.jp,34.748722,135.771149,Kikai
+ケーピーエス工業（株）,京都府相楽郡精華町精華台9丁目1番地3,http://www.kps-k.co.jp,34.747604,135.770248,Kikai
+サイレックス・テクノロジー（株）けいはんな本社,京都府相楽郡精華町光台2丁目3番地1,http://www.silex.jp,34.741837,135.768219,Denki
+NTTコミュニケーション科学基礎研究所,京都府相楽郡精華町光台２丁目４番地,http://www.kecl.ntt.co.jp,34.741306,135.764618,Denki;Robot;
+パナソニック（株）先端研究本部 京阪奈地区,京都府相楽郡精華町光台３丁目４番地,http://panasonic.co.jp/,34.746044,135.762024,Kikai;Denki;Robot;Seikatsu;Unyu
+（国研）情報通信研究機構（NICT）ユニバーサルコミュニケーション研究所先進的音声翻訳研究開発推進センター,京都府相楽郡精華町光台３丁目５番地,http://ucri.nict.go.jp/　http://astrec.nict.go.jp/,34.746037,135.75946,Denki;Robot
+京セラ（株）中央研究所,京都府相楽郡精華町光台３丁目５番地３,http://www.kyocera.co.jp,34.745403,135.758942,Kagaku;Seikatsu;Denki;Butsuri
+（株）島津製作所基盤技術研究所,京都府相楽郡精華町光台３丁目９番地４,http://www.shimadzu.co.jp,34.745258,135.756348,Kikai;Seikatsu;Unyu;Kagaku
+（株）フォトン,京都府相楽郡精華町光台７丁目２７番地１,http://www.photon-cae.co.jp,34.744564,135.756302,Denki
+（株）ウィル,京都府相楽郡精華町光台３丁目７番地１,http://www.will-mfg.com,34.747463,135.756104,Kagaku
+テクノフレックス（株）京都研究所,京都府相楽郡精華町光台３丁目７番地４,http://www.technoflex.co.jp,34.7477,135.756577,Kagaku
+（株）イチグチ京都光台研究所,京都府相楽郡精華町光台３丁目７番地３,http://www.ichiguchi.co.jp,34.747395,135.757736,Kagaku;Kami
+環境衛生薬品（株）関西学研ラボラトリー生活圏環境衛生研究所,京都府相楽郡精華町光台３丁目６番地1,http://www.kanyaku.co.jp,34.747658,135.759598,Seikatsu;Plant
+（株）ウイスト,京都府相楽郡精華町光台３丁目２番地２６,http://www.wist.co.jp,34.747738,135.762085,Kikai;Denki
+（株）ジーネス,京都府相楽郡精華町光台３丁目２番地２５,http://www.gnes.co.jp,34.747776,135.762451,Kikai
+相楽工業（株）,京都府相楽郡精華町光台３丁目２番地３,http://www.sohraku.com,34.747883,135.763626,Kikai;Kozo
+日本制御（株）,京都府相楽郡精華町光台３丁目２番地１１,http://www.nseigyo.co.jp,34.747364,135.761963,Denki;Seikatsu
+高由金属（株）光台テクノセンター,京都府相楽郡精華町光台３丁目２番地９,http://www.takayosi.co.jp,34.747368,135.762329,kikai
+（株）加地けいはんなR&Dセンター,京都府相楽郡精華町光台３丁目２番地７,http://www.eonet.ne.jp/~willconsultant/,34.74736,135.762772,Kozo
+（有）ウィルコンサルタントけいはんなセンター,京都府相楽郡精華町光台３丁目２番地５,http://www.eonet.ne.jp/~willconsultant/,34.74749,135.763168,Kozo
+（株）広和工業,京都府相楽郡精華町光台３丁目２番地６,http://kowa.nsf.jp,34.74736,135.763077,Kami;
+一般社団法人ＫＥＣ関西電子工業振興センター,京都府相楽郡精華町光台３丁目２番地２,http://www.kec.jp,34.747631,135.763596,Denki;Butsuri
+（株）京都栄養化学研究所,京都府相楽郡精華町光台３丁目２番地１６,http://www.kyoto-eiyo.co.jp,34.747631,135.764114,Seikatsu;Plant;Kagaku
+日本ニューロン（株）,京都府相楽郡精華町光台３丁目２番地１８,http://www.neuron.ne.jp,34.74773,135.764755,Kozo;Kikai
+（株）プロテックス・ジャパン,京都府相楽郡精華町光台３丁目２番地１,http://protexjapan.co.jp,34.747917,135.765533,Seikatsu;Kagaku
+内外化成（株）京都工場研究開発センター,京都府相楽郡精華町光台１丁目２番地６,http://www.naigai-kasei.jp,34.748447,135.766159,Seikatsu;Kagaku
+サンプラスチックス（株）テクノロジーセンター,京都府相楽郡精華町光台１丁目２番地９,http://sunpla.co.jp,34.747532,135.767822,Seikatsu
+（株）アテックス京都事業所生産研究開発センター,京都府相楽郡精華町光台１丁目２番地１１,http://www.atecs.jp,34.74765,135.769104,Butsuri;Kikai;Unyu
+"エンゼルプレイングカード製造（株）
+関西学研工場・研究開発センター",京都府相楽郡精華町精華台８丁目１番地５,http://www.angelplayingcards.com,34.743721,135.774002,Kami;Seikatsu
+SOWA Technical Institutionけいはんな,京都府相楽郡精華町光台３丁目２番地２４,http://www.sowakasei.com,34.747883,135.763626,Kagaku
+（株）イーシーフロンティア,京都府相楽郡精華町光台３丁目２番地３０,http://www.ec-frontier.co.jp,34.748123,135.762344,Kagaku
+アドコート（株）,京都府相楽郡精華町光台1丁目２番地２０,http://www.adpack.jp,34.747688,135.769592,Kami
+（株）KCN京都,京都府相楽郡精華町光台7丁目11番地,http://www.kcn-kyoto.jp/,34.741909,135.757294,Denki
+けいはんなオープンイノベーションセンター（KICK）,"京都府木津川市木津川台9丁目６番
+",http://kick.kyoto/,34.744923,135.780746,Seikatsu
+けいはんなオープンイノベーションセンター（KICK）,相楽郡精華町精華台７丁目5番１,http://kick.kyoto/,34.745491,135.779572,Seikatsu
+サントリー ワールド リサーチセンター,京都府相楽郡精華町精華台8丁目1－1,http://www.suntory.co.jp/company/research/swr/,34.743755,135.772202,Seikatsu;Plant
+大幸薬品（株）京都工場・研究開発センター,京都府相楽郡精華町光台1丁目2-1,http://www.seirogan.co.jp/,34.748634,135.769287,Seikatsu
+SEW-オイロドライブ・ジャパン（株）京都オペレーションセンター,京都府相楽郡精華町精華台９丁目１－１１,http://www.sew-eurodrive.co.jp/,34.750019,135.770813,Kikai
+モリテックスチール（株）けいはんなＲ＆Ｄセンター,京都府相楽郡精華町精華台9丁目1番15,http://molitec.co.jp/,34.750267,135.770782,Kozo
+（株）オリエンタルベーカリー 京都工場,京都府相楽郡精華町精華台9丁目1番17号,http://www.orientalbakery.co.jp,34.750267,135.770782,Seikatsu;Plant

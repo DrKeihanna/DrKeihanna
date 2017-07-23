@@ -1,0 +1,365 @@
+@base <http://data.lodosaka.jp/keihanna/data/> .
+@prefix bp: <http://data.lodosaka.jp/keihanna/data/property/> . 
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+<> cc:attributionName "けいはんなStudents" ;
+   cc:license <http://creativecommons.org/licenses/by/4.0/deed.ja> .
+<1>  rdfs:label "けいはんなプラザ"@ja ;
+ schema:address "京都府相楽郡精華町光台１丁目７番地"@ja ;
+ schema:WebSite <http://www.keihanna-plaza.co.jp/> ;
+ geo:lat "34.744736"^^xsd:double ;
+  geo:long "135.764786"^^xsd:double .
+
+<2>  rdfs:label "（株）国際電気通信基礎技術研究所（ATR）"@ja ;
+ schema:address "京都府相楽郡精華町光台２丁目２番地２"@ja ;
+ schema:WebSite <http://www.atr.jp> ;
+ geo:lat "34.743763"^^xsd:double ;
+  geo:long "135.766052"^^xsd:double ;
+ bp:category "Denki;Robot" .
+
+<3>  rdfs:label "国立国会図書館関西館"@ja ;
+ schema:address "京都府相楽郡精華町精華台８-1-3"@ja ;
+ schema:WebSite <http://www.ndl.go.jp/jp/service/kansai/index.html> ;
+ geo:lat "34.743389"^^xsd:double ;
+  geo:long "135.769974"^^xsd:double .
+
+<4>  rdfs:label "（公財）国際高等研究所（IIAS）"@ja ;
+ schema:address "京都府木津川市木津川台９丁目３番地"@ja ;
+ schema:WebSite <http://www.iias.or.jp/> ;
+ geo:lat "34.741413"^^xsd:double ;
+  geo:long "135.77652"^^xsd:double ;
+ bp:category "Robot" .
+
+<5>  rdfs:label "（公財）地球環境産業技術研究機構（RITE）"@ja ;
+ schema:address "京都府木津川市木津川台９丁目２番地"@ja ;
+ schema:WebSite <http://www.rite.or.jp> ;
+ geo:lat "34.741642"^^xsd:double ;
+  geo:long "135.778488"^^xsd:double ;
+ bp:category "Seikatsu;Kagaku;" .
+
+<6>  rdfs:label "同志社大学 （学研都市キャンパス）"@ja ;
+ schema:address "京都府木津川市木津川台4丁目1-1"@ja ;
+ schema:WebSite <http://www.doshisha.ac.jp/> ;
+ geo:lat "34.747684"^^xsd:double ;
+  geo:long "135.785995"^^xsd:double ;
+ bp:category "Seikatsu;Kikai;Butsuri" .
+
+<7>  rdfs:label "オムロン（株）京阪奈イノベーションセンタ"@ja ;
+ schema:address "京都府木津川市木津川台9丁目１"@ja ;
+ schema:WebSite <http://www.omron.co.jp/r_d/lab/keihanna> ;
+ geo:lat "34.739983"^^xsd:double ;
+  geo:long "135.777084"^^xsd:double ;
+ bp:category "Kikai;Denki;Robot;Seikatsu;Unyu" .
+
+<8>  rdfs:label "けいはんな記念公園"@ja ;
+ schema:address "京都府相楽郡精華町精華台６丁目１番地"@ja ;
+ schema:WebSite <http://keihanna-park.net/> ;
+ geo:lat "34.748211"^^xsd:double ;
+  geo:long "135.772736"^^xsd:double .
+
+<9>  rdfs:label "（株）井上製作所"@ja ;
+ schema:address "京都府相楽郡精華町精華台7丁目4番地3"@ja ;
+ schema:WebSite <http://www.inoue-seisakusyo.co.jp> ;
+ geo:lat "34.748047"^^xsd:double ;
+  geo:long "135.783798"^^xsd:double ;
+ bp:category "Kikai" .
+
+<10>  rdfs:label "ダイナミックツール （株）"@ja ;
+ schema:address "京都府相楽郡精華町精華台7丁目4番地6"@ja ;
+ schema:WebSite <http://dynamictools.co.jp> ;
+ geo:lat "34.748695"^^xsd:double ;
+  geo:long "135.785126"^^xsd:double ;
+ bp:category "Kikai" .
+
+<11>  rdfs:label "明和ゴム工業（株）京都生産技術センター"@ja ;
+ schema:address "京都府相楽郡精華町精華台9丁目1番地13"@ja ;
+ schema:WebSite <http://www.meiwa-rubber.co.jp> ;
+ geo:lat "34.748722"^^xsd:double ;
+  geo:long "135.771149"^^xsd:double ;
+ bp:category "Kagaku" .
+
+<12>  rdfs:label "東英産業（株）"@ja ;
+ schema:address "京都府相楽郡精華町精華台9丁目1番地1"@ja ;
+ schema:WebSite <http://www.toeisangyo.jp> ;
+ geo:lat "34.748722"^^xsd:double ;
+  geo:long "135.771149"^^xsd:double ;
+ bp:category "Kikai" .
+
+<13>  rdfs:label "ケーピーエス工業（株）"@ja ;
+ schema:address "京都府相楽郡精華町精華台9丁目1番地3"@ja ;
+ schema:WebSite <http://www.kps-k.co.jp> ;
+ geo:lat "34.747604"^^xsd:double ;
+  geo:long "135.770248"^^xsd:double ;
+ bp:category "Kikai" .
+
+<14>  rdfs:label "サイレックス・テクノロジー（株）けいはんな本社"@ja ;
+ schema:address "京都府相楽郡精華町光台2丁目3番地1"@ja ;
+ schema:WebSite <http://www.silex.jp> ;
+ geo:lat "34.741837"^^xsd:double ;
+  geo:long "135.768219"^^xsd:double ;
+ bp:category "Denki" .
+
+<15>  rdfs:label "NTTコミュニケーション科学基礎研究所"@ja ;
+ schema:address "京都府相楽郡精華町光台２丁目４番地"@ja ;
+ schema:WebSite <http://www.kecl.ntt.co.jp> ;
+ geo:lat "34.741306"^^xsd:double ;
+  geo:long "135.764618"^^xsd:double ;
+ bp:category "Denki;Robot;" .
+
+<16>  rdfs:label "パナソニック（株）先端研究本部 京阪奈地区"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目４番地"@ja ;
+ schema:WebSite <http://panasonic.co.jp/> ;
+ geo:lat "34.746044"^^xsd:double ;
+  geo:long "135.762024"^^xsd:double ;
+ bp:category "Kikai;Denki;Robot;Seikatsu;Unyu" .
+
+<17>  rdfs:label "（国研）情報通信研究機構（NICT）ユニバーサルコミュニケーション研究所先進的音声翻訳研究開発推進センター"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目５番地"@ja ;
+ schema:WebSite <http://ucri.nict.go.jp/　http://astrec.nict.go.jp/> ;
+ geo:lat "34.746037"^^xsd:double ;
+  geo:long "135.75946"^^xsd:double ;
+ bp:category "Denki;Robot" .
+
+<18>  rdfs:label "京セラ（株）中央研究所"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目５番地３"@ja ;
+ schema:WebSite <http://www.kyocera.co.jp> ;
+ geo:lat "34.745403"^^xsd:double ;
+  geo:long "135.758942"^^xsd:double ;
+ bp:category "Kagaku;Seikatsu;Denki;Butsuri" .
+
+<19>  rdfs:label "（株）島津製作所基盤技術研究所"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目９番地４"@ja ;
+ schema:WebSite <http://www.shimadzu.co.jp> ;
+ geo:lat "34.745258"^^xsd:double ;
+  geo:long "135.756348"^^xsd:double ;
+ bp:category "Kikai;Seikatsu;Unyu;Kagaku" .
+
+<20>  rdfs:label "（株）フォトン"@ja ;
+ schema:address "京都府相楽郡精華町光台７丁目２７番地１"@ja ;
+ schema:WebSite <http://www.photon-cae.co.jp> ;
+ geo:lat "34.744564"^^xsd:double ;
+  geo:long "135.756302"^^xsd:double ;
+ bp:category "Denki" .
+
+<21>  rdfs:label "（株）ウィル"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目７番地１"@ja ;
+ schema:WebSite <http://www.will-mfg.com> ;
+ geo:lat "34.747463"^^xsd:double ;
+  geo:long "135.756104"^^xsd:double ;
+ bp:category "Kagaku" .
+
+<22>  rdfs:label "テクノフレックス（株）京都研究所"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目７番地４"@ja ;
+ schema:WebSite <http://www.technoflex.co.jp> ;
+ geo:lat "34.7477"^^xsd:double ;
+  geo:long "135.756577"^^xsd:double ;
+ bp:category "Kagaku" .
+
+<23>  rdfs:label "（株）イチグチ京都光台研究所"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目７番地３"@ja ;
+ schema:WebSite <http://www.ichiguchi.co.jp> ;
+ geo:lat "34.747395"^^xsd:double ;
+  geo:long "135.757736"^^xsd:double ;
+ bp:category "Kagaku;Kami" .
+
+<24>  rdfs:label "環境衛生薬品（株）関西学研ラボラトリー生活圏環境衛生研究所"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目６番地1"@ja ;
+ schema:WebSite <http://www.kanyaku.co.jp> ;
+ geo:lat "34.747658"^^xsd:double ;
+  geo:long "135.759598"^^xsd:double ;
+ bp:category "Seikatsu;Plant" .
+
+<25>  rdfs:label "（株）ウイスト"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目２番地２６"@ja ;
+ schema:WebSite <http://www.wist.co.jp> ;
+ geo:lat "34.747738"^^xsd:double ;
+  geo:long "135.762085"^^xsd:double ;
+ bp:category "Kikai;Denki" .
+
+<26>  rdfs:label "（株）ジーネス"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目２番地２５"@ja ;
+ schema:WebSite <http://www.gnes.co.jp> ;
+ geo:lat "34.747776"^^xsd:double ;
+  geo:long "135.762451"^^xsd:double ;
+ bp:category "Kikai" .
+
+<27>  rdfs:label "相楽工業（株）"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目２番地３"@ja ;
+ schema:WebSite <http://www.sohraku.com> ;
+ geo:lat "34.747883"^^xsd:double ;
+  geo:long "135.763626"^^xsd:double ;
+ bp:category "Kikai;Kozo" .
+
+<28>  rdfs:label "日本制御（株）"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目２番地１１"@ja ;
+ schema:WebSite <http://www.nseigyo.co.jp> ;
+ geo:lat "34.747364"^^xsd:double ;
+  geo:long "135.761963"^^xsd:double ;
+ bp:category "Denki;Seikatsu" .
+
+<29>  rdfs:label "高由金属（株）光台テクノセンター"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目２番地９"@ja ;
+ schema:WebSite <http://www.takayosi.co.jp> ;
+ geo:lat "34.747368"^^xsd:double ;
+  geo:long "135.762329"^^xsd:double ;
+ bp:category "kikai" .
+
+<30>  rdfs:label "（株）加地けいはんなR&Dセンター"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目２番地７"@ja ;
+ schema:WebSite <http://www.eonet.ne.jp/~willconsultant/> ;
+ geo:lat "34.74736"^^xsd:double ;
+  geo:long "135.762772"^^xsd:double ;
+ bp:category "Kozo" .
+
+<31>  rdfs:label "（有）ウィルコンサルタントけいはんなセンター"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目２番地５"@ja ;
+ schema:WebSite <http://www.eonet.ne.jp/~willconsultant/> ;
+ geo:lat "34.74749"^^xsd:double ;
+  geo:long "135.763168"^^xsd:double ;
+ bp:category "Kozo" .
+
+<32>  rdfs:label "（株）広和工業"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目２番地６"@ja ;
+ schema:WebSite <http://kowa.nsf.jp> ;
+ geo:lat "34.74736"^^xsd:double ;
+  geo:long "135.763077"^^xsd:double ;
+ bp:category "Kami;" .
+
+<33>  rdfs:label "一般社団法人ＫＥＣ関西電子工業振興センター"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目２番地２"@ja ;
+ schema:WebSite <http://www.kec.jp> ;
+ geo:lat "34.747631"^^xsd:double ;
+  geo:long "135.763596"^^xsd:double ;
+ bp:category "Denki;Butsuri" .
+
+<34>  rdfs:label "（株）京都栄養化学研究所"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目２番地１６"@ja ;
+ schema:WebSite <http://www.kyoto-eiyo.co.jp> ;
+ geo:lat "34.747631"^^xsd:double ;
+  geo:long "135.764114"^^xsd:double ;
+ bp:category "Seikatsu;Plant;Kagaku" .
+
+<35>  rdfs:label "日本ニューロン（株）"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目２番地１８"@ja ;
+ schema:WebSite <http://www.neuron.ne.jp> ;
+ geo:lat "34.74773"^^xsd:double ;
+  geo:long "135.764755"^^xsd:double ;
+ bp:category "Kozo;Kikai" .
+
+<36>  rdfs:label "（株）プロテックス・ジャパン"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目２番地１"@ja ;
+ schema:WebSite <http://protexjapan.co.jp> ;
+ geo:lat "34.747917"^^xsd:double ;
+  geo:long "135.765533"^^xsd:double ;
+ bp:category "Seikatsu;Kagaku" .
+
+<37>  rdfs:label "内外化成（株）京都工場研究開発センター"@ja ;
+ schema:address "京都府相楽郡精華町光台１丁目２番地６"@ja ;
+ schema:WebSite <http://www.naigai-kasei.jp> ;
+ geo:lat "34.748447"^^xsd:double ;
+  geo:long "135.766159"^^xsd:double ;
+ bp:category "Seikatsu;Kagaku" .
+
+<38>  rdfs:label "サンプラスチックス（株）テクノロジーセンター"@ja ;
+ schema:address "京都府相楽郡精華町光台１丁目２番地９"@ja ;
+ schema:WebSite <http://sunpla.co.jp> ;
+ geo:lat "34.747532"^^xsd:double ;
+  geo:long "135.767822"^^xsd:double ;
+ bp:category "Seikatsu" .
+
+<39>  rdfs:label "（株）アテックス京都事業所生産研究開発センター"@ja ;
+ schema:address "京都府相楽郡精華町光台１丁目２番地１１"@ja ;
+ schema:WebSite <http://www.atecs.jp> ;
+ geo:lat "34.74765"^^xsd:double ;
+  geo:long "135.769104"^^xsd:double ;
+ bp:category "Butsuri;Kikai;Unyu" .
+
+<40>  rdfs:label """エンゼルプレイングカード製造（株）
+関西学研工場・研究開発センター"""@ja ;
+ schema:address "京都府相楽郡精華町精華台８丁目１番地５"@ja ;
+ schema:WebSite <http://www.angelplayingcards.com> ;
+ geo:lat "34.743721"^^xsd:double ;
+  geo:long "135.774002"^^xsd:double ;
+ bp:category "Kami;Seikatsu" .
+
+<41>  rdfs:label "SOWA Technical Institutionけいはんな"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目２番地２４"@ja ;
+ schema:WebSite <http://www.sowakasei.com> ;
+ geo:lat "34.747883"^^xsd:double ;
+  geo:long "135.763626"^^xsd:double ;
+ bp:category "Kagaku" .
+
+<42>  rdfs:label "（株）イーシーフロンティア"@ja ;
+ schema:address "京都府相楽郡精華町光台３丁目２番地３０"@ja ;
+ schema:WebSite <http://www.ec-frontier.co.jp> ;
+ geo:lat "34.748123"^^xsd:double ;
+  geo:long "135.762344"^^xsd:double ;
+ bp:category "Kagaku" .
+
+<43>  rdfs:label "アドコート（株）"@ja ;
+ schema:address "京都府相楽郡精華町光台1丁目２番地２０"@ja ;
+ schema:WebSite <http://www.adpack.jp> ;
+ geo:lat "34.747688"^^xsd:double ;
+  geo:long "135.769592"^^xsd:double ;
+ bp:category "Kami" .
+
+<44>  rdfs:label "（株）KCN京都"@ja ;
+ schema:address "京都府相楽郡精華町光台7丁目11番地"@ja ;
+ schema:WebSite <http://www.kcn-kyoto.jp/> ;
+ geo:lat "34.741909"^^xsd:double ;
+  geo:long "135.757294"^^xsd:double ;
+ bp:category "Denki" .
+
+<45>  rdfs:label "けいはんなオープンイノベーションセンター（KICK）"@ja ;
+ schema:address """京都府木津川市木津川台9丁目６番
+"""@ja ;
+ schema:WebSite <http://kick.kyoto/> ;
+ geo:lat "34.744923"^^xsd:double ;
+  geo:long "135.780746"^^xsd:double ;
+ bp:category "Seikatsu" .
+
+<46>  rdfs:label "けいはんなオープンイノベーションセンター（KICK）"@ja ;
+ schema:address "相楽郡精華町精華台７丁目5番１"@ja ;
+ schema:WebSite <http://kick.kyoto/> ;
+ geo:lat "34.745491"^^xsd:double ;
+  geo:long "135.779572"^^xsd:double ;
+ bp:category "Seikatsu" .
+
+<47>  rdfs:label "サントリー ワールド リサーチセンター"@ja ;
+ schema:address "京都府相楽郡精華町精華台8丁目1－1"@ja ;
+ schema:WebSite <http://www.suntory.co.jp/company/research/swr/> ;
+ geo:lat "34.743755"^^xsd:double ;
+  geo:long "135.772202"^^xsd:double ;
+ bp:category "Seikatsu;Plant" .
+
+<48>  rdfs:label "大幸薬品（株）京都工場・研究開発センター"@ja ;
+ schema:address "京都府相楽郡精華町光台1丁目2-1"@ja ;
+ schema:WebSite <http://www.seirogan.co.jp/> ;
+ geo:lat "34.748634"^^xsd:double ;
+  geo:long "135.769287"^^xsd:double ;
+ bp:category "Seikatsu" .
+
+<49>  rdfs:label "SEW-オイロドライブ・ジャパン（株）京都オペレーションセンター"@ja ;
+ schema:address "京都府相楽郡精華町精華台９丁目１－１１"@ja ;
+ schema:WebSite <http://www.sew-eurodrive.co.jp/> ;
+ geo:lat "34.750019"^^xsd:double ;
+  geo:long "135.770813"^^xsd:double ;
+ bp:category "Kikai" .
+
+<50>  rdfs:label "モリテックスチール（株）けいはんなＲ＆Ｄセンター"@ja ;
+ schema:address "京都府相楽郡精華町精華台9丁目1番15"@ja ;
+ schema:WebSite <http://molitec.co.jp/> ;
+ geo:lat "34.750267"^^xsd:double ;
+  geo:long "135.770782"^^xsd:double ;
+ bp:category "Kozo" .
+
+<51>  rdfs:label "（株）オリエンタルベーカリー 京都工場"@ja ;
+ schema:address "京都府相楽郡精華町精華台9丁目1番17号"@ja ;
+ schema:WebSite <http://www.orientalbakery.co.jp> ;
+ geo:lat "34.750267"^^xsd:double ;
+  geo:long "135.770782"^^xsd:double ;
+ bp:category "Seikatsu;Plant" .

@@ -7,6 +7,8 @@ https://kscan.jp/
 ■けいはんな学研都市パンフレット
 https://www.kri.or.jp/organization/index.html#local_link02
 
+■研究施設DB
+http://lod.hozo.jp/repositories/keihanna
 
 ■マップ表示
 http://lodosaka.jp/keihanna/map2/index.html?cat=all

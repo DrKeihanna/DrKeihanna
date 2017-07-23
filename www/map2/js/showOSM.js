@@ -83,6 +83,44 @@ function showMAP(result_data,mapid,cat){
 
    var today = new Date("2017-04-24T00:00:00Z");
 
+	 // SPARQLクエリを　"/*"の次の行から"*/"の前の行に書く
+	 var query = (function () {/*
+		 prefix bp: <http://data.lodosaka.jp/keihanna/data/property/>
+	prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+	prefix xsd: <http://www.w3.org/2001/XMLSchema>
+	prefix schema: <http://schema.org/>
+	prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+	SELECT DISTINCT ?label ?cate ?lat ?long ?web
+		 WHERE
+		 {
+		   ?s rdfs:label ?label ;
+		      geo:lat ?lat ;
+		      geo:long ?long;
+	          bp:category ?cate;
+	          schema:address ?addr;
+		      schema:WebSite ?web.
+	     }
+	 */}).toString().match(/\n([\s\S]*)\n/)[1];
+
+	 	qr = sendQuery("http://lod.hozo.jp/repositories/keihanna",query);
+	 		qr.fail(
+	 			function (xhr, textStatus, thrownError) {
+	 				alert("Error: A '" + textStatus+ "' occurred.");
+	 			}
+	 		);
+	 		qr.done(
+	 			function (d) {
+	 				//showMAP(d.results.bindings,'Map');
+	 				//result_table(d.results.bindings);
+	 				//download_result(d.results.bindings);
+					window.alert(JSON.stringify(d));
+	 			}
+	 		);
+
+
+
+
 
    // 指定した位置にマーカーを置く
 	 for ( i = 0; i < result_data.result.data.length; i++ ) {
