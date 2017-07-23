@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Dr.けいはんな | トップ</title>
+        <link href="Styles/Common.css" rel="stylesheet">
+        <link href="Styles/Index.css" rel="stylesheet">
+		<link href="Styles/jquery.modal.min.css" rel="stylesheet">
+        <script type="text/javascript" src="Scripts/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="Scripts/jquery.modal.min.js"></script>
+        <script type="text/javascript" src="Scripts/modernizr-2.8.3.js"></script>
+        <script type="text/javascript" src="Scripts/push.min.js"></script>
+        <script type="text/javascript" src="Scripts/drkeihanna.js"></script>
+	</head>
+	<body class="main">
+		<div class="header">
+            <h1>
+                Dr.けいはんな
+            </h1>
+		</div>
+        <div class="contents">
+            <div class="drkeihanna">
+                <span class="map">
+                    <img id="drkeihanna" src="Images/drkeihanna0.png" alt="DrKeihanna" usemap="#drkeihanna">
+                    <map name="drkeihanna">
+                        <area shape="rect" coords="210,80,300,150" href="http://lodosaka.jp/keihanna/map2/index.html?cat=all" rel="modal:open" alt="精華町"
+                              onMouseOver="cImg('Images/drkeihanna1.png')" onMouseOut="cImg('Images/drkeihanna0.png')" onClick="cImg('Images/drkeihanna0.png')">
+                        <area shape="rect" coords="260,150,350,200" href="#kidugawa" rel="modal:open" alt="木津川市"
+                              onMouseOver="cImg('Images/drkeihanna2.png')" onMouseOut="cImg('Images/drkeihanna0.png')" onClick="cImg('Images/drkeihanna0.png')">
+                        <area shape="rect" coords="170,150,300,220" href="#kyotanabe" rel="modal:open" alt="京田辺市"
+                              onMouseOver="cImg('Images/drkeihanna3.png')" onMouseOut="cImg('Images/drkeihanna0.png')" onClick="cImg('Images/drkeihanna0.png')">
+                        <area shape="rect" coords="200,30,300,80" href="#seikacho" rel="modal:open" alt="京田辺市"
+                              onMouseOver="cImg('Images/drkeihanna4.png')" onMouseOut="cImg('Images/drkeihanna0.png')" onClick="cImg('Images/drkeihanna0.png')">
+                        <area shape="rect" coords="100,110,180,180" href="#seikacho" rel="modal:open" alt="京田辺市"
+                              onMouseOver="cImg('Images/drkeihanna5.png')" onMouseOut="cImg('Images/drkeihanna0.png')" onClick="cImg('Images/drkeihanna0.png')">
+                        <area shape="rect" coords="150,30,200,80" href="#seikacho" rel="modal:open" alt="京田辺市"
+                              onMouseOver="cImg('Images/drkeihanna6.png')" onMouseOut="cImg('Images/drkeihanna0.png')" onClick="cImg('Images/drkeihanna0.png')">
+                        <area shape="rect" coords="50,90,120,140" href="#seikacho" rel="modal:open" alt="京田辺市"
+                              onMouseOver="cImg('Images/drkeihanna7.png')" onMouseOut="cImg('Images/drkeihanna0.png')" onClick="cImg('Images/drkeihanna0.png')">
+                        <area shape="rect" coords="40,130,120,200" href="#seikacho" rel="modal:open" alt="京田辺市"
+                              onMouseOver="cImg('Images/drkeihanna8.png')" onMouseOut="cImg('Images/drkeihanna0.png')" onClick="cImg('Images/drkeihanna0.png')">
+                        <area shape="circle" coords="205,290,30" href="MyLab.html" rel="modal:open" alt="わたしの研究室"
+                              onMouseOver="cImg('Images/drkeihanna9.png')" onMouseOut="cImg('Images/drkeihanna0.png')" onClick="cImg('Images/drkeihanna0.png')">
+                    </map>
+                </span>
+                <div id="seikacho" style="display:none;">
+                    <p><a href="#" rel="modal:close">とじる</a></p>
+                </div>
+                <span class="bot">
+                    <iframe src='https://webchat.botframework.com/embed/Drkeihanna?s=zs9KWILlGbc.cwA.n4c.RRbNdKgcyxeE-u3odasaurP9AwGqF-kdFK6rljXIQLk'></iframe>
+                </span>
+            </div>
+            <div class="menu">
+                <div>
+                    研究のカテゴリー
+                </div>
+                <span class="menuitem">
+                    <a class="science" href="http://lodosaka.jp/keihanna/map2/index.html?cat=Seikatsu">
+                        <img class="pin" src="../Images/Seikatsu.png" alt="生活必需品" />
+                        <span class="fukidashi">生活必需品の研究</span>
+                    </a>
+                </span>
+                <span class="menuitem">
+                    <a class="build" href="http://lodosaka.jp/keihanna/map2/index.html?cat=Unyu">
+                        <img class="pin" src="../Images/Unyu.png" alt="運輸" />
+                        <span class="fukidashi">ものをはこぶ研究</span>
+                    </a>
+                </span>
+                <span class="menuitem">
+                    <a class="drink" href="http://lodosaka.jp/keihanna/map2/index.html?cat=Robot">
+                        <img class="pin" src="../Images/Robot.png" alt="ロボット" />
+                        <span class="fukidashi">ロボットの研究</span>
+                    </a>
+                </span>
+                <span class="menuitem">
+                    <a class="drink" href="http://lodosaka.jp/keihanna/map2/index.html?cat=Kozo">
+                        <img class="pin" src="../Images/Kozo.png" alt="構造物" />
+                        <span class="fukidashi">たてものの研究</span>
+                    </a>
+                </span>
+                <span class="menuitem">
+                    <a class="drink" href="http://lodosaka.jp/keihanna/map2/index.html?cat=Kikai">
+                        <img class="pin" src="../Images/Kikai.png" alt="機械" />
+                        <span class="fukidashi">機械の研究</span>
+                    </a>
+                </span>
+                <span class="menuitem">
+                    <a class="drink" href="http://lodosaka.jp/keihanna/map2/index.html?cat=Plant">
+                        <img class="pin" src="../Images/Plant.png" alt="植物" />
+                        <span class="fukidashi">植物の研究</span>
+                    </a>
+                </span>
+                <span class="menuitem">
+                    <a class="kami" href="http://lodosaka.jp/keihanna/map2/index.html?cat=Kami">
+                        <img class="pin" src="../Images/Kami.png" alt="紙" />
+                        <span class="fukidashi">紙の研究</span>
+                    </a>
+                </span>
+                <span class="menuitem">
+                    <a class="butsuri" href="http://lodosaka.jp/keihanna/map2/index.html?cat=Butsuri">
+                        <img class="pin" src="../Images/Butsuri.png" alt="物理" />
+                        <span class="fukidashi">物理の研究</span>
+                    </a>
+                </span>
+                <span class="menuitem">
+                    <a class="Denki" href="http://lodosaka.jp/keihanna/map2/index.html?cat=Denki">
+                        <img class="pin" src="../Images/Denki.png" alt="電気" />
+                        <span class="fukidashi">電気の研究</span>
+                    </a>
+                </span>
+            </div>
+            <div>
+                <a id="push" href="#" onclick="PushNotice(); return false;">
+                    <img class="pin" src="../Images/00.png" alt="" />
+                </a>
+            </div>
+        </div>
+	</body>
+</html>

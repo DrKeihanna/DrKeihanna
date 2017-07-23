@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>オムロン | Dr.けいはんな</title>
+        <link href="Styles/Common.css" rel="stylesheet">
+        <link href="Styles/Detail.css" rel="stylesheet">
+        <link href="Styles/jquery.modal.min.css" rel="stylesheet">
+        <script type="text/javascript" src="Scripts/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="Scripts/jquery.modal.min.js"></script>
+        <script type="text/javascript" src="Scripts/modernizr-2.8.3.js"></script>
+        <script type="text/javascript" src="Scripts/push.min.js"></script>
+        <script type="text/javascript" src="Scripts/drkeihanna.js"></script>
+    </head>
+    <body class="main">
+
+    </body>
+</html>
