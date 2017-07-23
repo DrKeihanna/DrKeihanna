@@ -107,7 +107,33 @@ function showMAP(result_data,mapid,cat){
 		//var d1 = new Date(ms1);
 		//print(d1.toString());
 
-		if ( (iri.indexOf(cat) != -1) || (cat=='all') ) {
+		var cat_lbl = "all";
+		if(cat == "Seikatsu"){
+			cat_lbl == "生活";
+		}else if(cat == "Unyu"){
+			cat_lbl = "運輸";
+		}else if(cat == "Kagaku"){
+			cat_lbl = "化学";
+		} if(cat == "Kami"){
+			cat_lbl = "紙";
+		} if(cat == "Kozo"){
+			cat_lbl = "構造物";
+		} if(cat == "Kikai"){
+			cat_lbl = "機械";
+		} if(cat == "Butsuri"){
+			cat_lbl = "物理学";
+		} if(cat == "Denki"){
+			cat_lbl = "電気";
+		} if(cat == "Robot"){
+			cat_lbl = "構造物";
+//			cat_lbl = "ロボット";
+		} if(cat == "Plant"){
+			cat_lbl = "生活";
+//			cat_lbl = "植物";
+		}
+
+
+		if ( (iri.indexOf(cat_lbl) != -1)	|| (cat=='all') ) {
 		//カスタマイズアイコンを利用する場合
 			var icon = Kagaku;
 		  if(iri.indexOf("生活") != -1){

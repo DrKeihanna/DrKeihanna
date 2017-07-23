@@ -34,7 +34,7 @@ $(window).load(function() {
 		// if("".length=<0){
 		// 	cat = "all";
 		// }
-		window.alert(cat);
+		//window.alert(cat);
 
 		// else{
 		// 	cat = null;

@@ -1,4 +1,4 @@
-■けいはんな学研都市
+﻿■けいはんな学研都市
 https://www.kri.or.jp/know/
 
 ■K-Scan 科学のまちの子どもたち | けいはんな科学コミュニケーション推進ネットワーク
@@ -6,3 +6,19 @@ https://kscan.jp/
 
 ■けいはんな学研都市パンフレット
 https://www.kri.or.jp/organization/index.html#local_link02
+
+
+■マップ表示
+http://lodosaka.jp/keihanna/map2/index.html?cat=all
+
+→catは以下から選択
+"生活必需品" Seikatsu
+"処理操作；運輸" Unyu
+"化学；冶金" Kagaku
+"繊維；紙" Kami
+"固定構造物" Kozo
+"機械工学；照明；加熱；武器；爆破" Kikai
+"物理学" Butsuri
+"電気"   Denki
+"ロボット"　Robot
+"植物"　Plant
