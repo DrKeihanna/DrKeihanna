@@ -6,3 +6,6 @@
 "機械工学；照明；加熱；武器；爆破" Kikai
 "物理学" Butsuri
 "電気"   Denki
+
+"ロボット"　Robot
+"植物"　Plant
