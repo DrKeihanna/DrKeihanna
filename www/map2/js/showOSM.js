@@ -83,67 +83,13 @@ function showMAP(result_data,mapid,cat){
 
    var today = new Date("2017-04-24T00:00:00Z");
 
-	 // SPARQLクエリを　"/*"の次の行から"*/"の前の行に書く
-	 var query = (function () {/*
-		 prefix bp: <http://data.lodosaka.jp/keihanna/data/property/>
-	prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-	prefix xsd: <http://www.w3.org/2001/XMLSchema>
-	prefix schema: <http://schema.org/>
-	prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
-
-	SELECT DISTINCT ?label ?cate ?lat ?long ?web
-		 WHERE
-		 {
-		   ?s rdfs:label ?label ;
-		      geo:lat ?lat ;
-		      geo:long ?long;
-	          bp:category ?cate;
-	          schema:address ?addr;
-		      schema:WebSite ?web.
-	     }
-	 */}).toString().match(/\n([\s\S]*)\n/)[1];
-
-	 	qr = sendQuery("http://lod.hozo.jp/repositories/keihanna",query);
-	 		qr.fail(
-	 			function (xhr, textStatus, thrownError) {
-	 				alert("Error: A '" + textStatus+ "' occurred.");
-	 			}
-	 		);
-	 		qr.done(
-	 			function (d) {
-	 				//showMAP(d.results.bindings,'Map');
-	 				//result_table(d.results.bindings);
-	 				//download_result(d.results.bindings);
-					window.alert(JSON.stringify(d));
-	 			}
-	 		);
-
-
-
-
-
    // 指定した位置にマーカーを置く
 	 for ( i = 0; i < result_data.result.data.length; i++ ) {
-						// document.getElementById("resas_data").innerHTML +=
-						// result_data.result.data[i].patentSection +"-"+
-						// result_data.result.data[i].patentSubject +"\t"+
-						// result_data.result.data[i].lat + ","+
-						// result_data.result.data[i].lng + "<br />";
-// }
-//    for (var d = 0; d < data.length; d++) {
 		var iri = result_data.result.data[i].patentSection;
 		var v_label = result_data.result.data[i].patentSubject;
-		//var v_cat = data[d]['pin'].value;
-		// var v_point = data[d]['point'].value.replace("Point","").replace("(","").replace(")","");
-		// var point = v_point.split(" ");
+
 		v_lat = result_data.result.data[i].lat ;
 		v_long = result_data.result.data[i].lng ;
-
-		// var v_update = data[d]['update'].value;
-		// var ms = Date.parse(v_update);
-		// var date = new Date(ms);
-		//var d1 = new Date(ms1);
-		//print(d1.toString());
 
 		var cat_lbl = "all";
 		if(cat == "Seikatsu"){
@@ -163,11 +109,11 @@ function showMAP(result_data,mapid,cat){
 		} if(cat == "Denki"){
 			cat_lbl = "電気";
 		} if(cat == "Robot"){
-			cat_lbl = "構造物";
-//			cat_lbl = "ロボット";
+			//cat_lbl = "構造物";
+			cat_lbl = "ロボット";
 		} if(cat == "Plant"){
-			cat_lbl = "生活";
-//			cat_lbl = "植物";
+			//cat_lbl = "生活";
+			cat_lbl = "植物";
 		}
 
 
@@ -175,8 +121,8 @@ function showMAP(result_data,mapid,cat){
 		//カスタマイズアイコンを利用する場合
 			var icon = Kagaku;
 		  if(iri.indexOf("生活") != -1){
-				icon = Plant;
-			  //icon = Seikatsu;
+				//icon = Plant;
+			  icon = Seikatsu;
 			}else if(iri.indexOf("運輸") != -1){
 				icon = Unyu;
 			}else if(iri.indexOf("化学") != -1){
@@ -186,8 +132,8 @@ function showMAP(result_data,mapid,cat){
 			}else if(iri.indexOf("構造") != -1){
 				icon = Kozo;
 			}else if(iri.indexOf("機械") != -1){
-				icon = Robot;
-				//icon = Kikai;
+				//icon = Robot;
+				icon = Kikai;
 			}else if(iri.indexOf("物理") != -1){
 				icon = Butsuri;
 			}else if(iri.indexOf("電気") != -1){
@@ -207,5 +153,106 @@ function showMAP(result_data,mapid,cat){
 					   );
 			}
    }//For文の終わり
+
+	 // SPARQLクエリを　"/*"の次の行から"*/"の前の行に書く
+	 var query = (function () {/*
+		 prefix bp: <http://data.lodosaka.jp/keihanna/data/property/>
+	prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+	prefix xsd: <http://www.w3.org/2001/XMLSchema>
+	prefix schema: <http://schema.org/>
+	prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+	SELECT DISTINCT ?label ?cate ?lat ?long ?web
+		 WHERE
+		 {
+			 ?s rdfs:label ?label ;
+					geo:lat ?lat ;
+					geo:long ?long;
+						bp:category ?cate;
+						schema:address ?addr;
+					schema:WebSite ?web.
+			 }
+	 */}).toString().match(/\n([\s\S]*)\n/)[1];
+
+		qr = sendQuery("http://lod.hozo.jp/repositories/keihanna",query);
+			qr.fail(
+				function (xhr, textStatus, thrownError) {
+					alert("Error: A '" + textStatus+ "' occurred.");
+				}
+			);
+			qr.done(
+				function (data) {
+					//window.alert(JSON.stringify(data));
+					// 指定した位置にマーカーを置く
+						for (var d = 0; d < data.results.bindings.length; d++) {
+	 						var v_label = data.results.bindings[d]['label'].value;
+							var cate = data.results.bindings[d]['cate'].value;
+							var hp = data.results.bindings[d]['web'].value;
+
+						 var v_lat = data.results.bindings[d]['lat'].value;
+	 				 	 var v_long = data.results.bindings[d]['long'].value;
+
+						 if ( (cate.indexOf(cat) != -1)	|| (cat =='all') ) {
+				 		//カスタマイズアイコンを利用する場合
+				 			var icon = Kagaku;
+							if ( cat =='all') {
+								if(cate.indexOf("Robot") != -1){
+					 				icon = Robot;
+					 			}else if(cate.indexOf("Plant") != -1){
+					 				icon = Plant;
+					 			}else if(cate.indexOf("Seikatsu") != -1){
+					 				icon = Seikatsu;
+					 			}else if(cate.indexOf("Unyu") != -1){
+					 				icon = Unyu;
+					 			}else if(cate.indexOf("Kagaku") != -1){
+					 				icon = Kagaku;
+					 			}else if(cate.indexOf("Kami") != -1){
+					 				icon = Kami;
+					 			}else if(cate.indexOf("Kozo") != -1){
+					 				icon = Kozo;
+					 			}else if(cate.indexOf("Kikai") != -1){
+					 				icon = Kikai;
+					 			}else if(cate.indexOf("Butsuri") != -1){
+					 				icon = Butsuri;
+					 			}else if(cate.indexOf("Denki") != -1){
+					 				icon = Denki;
+					 			}
+							}else{
+								if((cate.indexOf(cat) != -1) && cate.indexOf("Robot") != -1){
+					 				icon = Robot;
+					 			}else if((cate.indexOf(cat) != -1) && cate.indexOf("Plant") != -1){
+					 				icon = Plant;
+					 			}else if((cate.indexOf(cat) != -1) && cate.indexOf("Seikatsu") != -1){
+					 				icon = Seikatsu;
+					 			}else if((cate.indexOf(cat) != -1) && cate.indexOf("Unyu") != -1){
+					 				icon = Unyu;
+					 			}else if((cate.indexOf(cat) != -1) && cate.indexOf("Kagaku") != -1){
+					 				icon = Kagaku;
+					 			}else if((cate.indexOf(cat) != -1) && cate.indexOf("Kami") != -1){
+					 				icon = Kami;
+					 			}else if((cate.indexOf(cat) != -1) && cate.indexOf("Kozo") != -1){
+					 				icon = Kozo;
+					 			}else if((cate.indexOf(cat) != -1) && cate.indexOf("Kikai") != -1){
+					 				icon = Kikai;
+					 			}else if((cate.indexOf(cat) != -1) && cate.indexOf("Butsuri") != -1){
+					 				icon = Butsuri;
+					 			}else if((cate.indexOf(cat) != -1) && cate.indexOf("Denki") != -1){
+					 				icon = Denki;
+					 			}
+							}
+
+
+						// var icon = Kagaku;
+
+	 				 var mapMarker = L.marker([v_lat, v_long], {icon: icon});
+						 //	var mapMarker = L.marker([v_lat, v_long]);
+						 	 mapMarker.addTo(map);
+					 	   mapMarker.bindPopup(
+								 '<b><a href="'+hp+'">'+v_label+'</a></b><br>'+v_lat +","+v_long
+							    );
+					    }
+						}
+				});
+
 
 }
