@@ -21,19 +21,65 @@ function showMAP(result_data,mapid,cat){
 
    tileLayer.addTo(map);
 
-   var icon_w = 21;//14;
-   var icon_h = 30;//20;
+   var icon_w = 20;//14;
+   var icon_h = 20;//20;
 
    var userIcon = L.icon({
        iconUrl: 'icon/image001.png',
        iconSize:     [icon_w, icon_h], // size of the icon
-       iconAnchor: [0, icon_h],
+       iconAnchor: [icon_w/2, icon_h/2],
    });
-   var userIcon2 = L.icon({
-       iconUrl: 'icon/image002.png',
+   var Seikatsu = L.icon({
+       iconUrl: 'icon/Seikatsu.png',
        iconSize:     [icon_w, icon_h], // size of the icon
-       iconAnchor: [0, icon_h],
+       iconAnchor: [icon_w/2, icon_h/2],
    });
+	 var Unyu = L.icon({
+       iconUrl: 'icon/Unyu.png',
+       iconSize:     [icon_w, icon_h], // size of the icon
+       iconAnchor: [icon_w/2, icon_h/2],
+   });
+	 var Kagaku = L.icon({
+       iconUrl: 'icon/Kagaku.png',
+       iconSize:     [icon_w, icon_h], // size of the icon
+       iconAnchor: [icon_w/2, icon_h/2],
+   });
+	 var Kami = L.icon({
+       iconUrl: 'icon/Kami.png',
+       iconSize:     [icon_w, icon_h], // size of the icon
+       iconAnchor: [icon_w/2, icon_h/2],
+   });
+	 var Kozo = L.icon({
+       iconUrl: 'icon/Kozo.png',
+       iconSize:     [icon_w, icon_h], // size of the icon
+       iconAnchor: [icon_w/2, icon_h/2],
+   });
+	 var Kikai = L.icon({
+       iconUrl: 'icon/Kikai.png',
+       iconSize:     [icon_w, icon_h], // size of the icon
+       iconAnchor: [icon_w/2, icon_h/2],
+   });
+	 var Butsuri = L.icon({
+       iconUrl: 'icon/Butsuri.png',
+       iconSize:     [icon_w, icon_h], // size of the icon
+       iconAnchor: [icon_w/2, icon_h/2],
+   });
+	 var Denki = L.icon({
+       iconUrl: 'icon/Denki.png',
+       iconSize:     [icon_w, icon_h], // size of the icon
+       iconAnchor: [icon_w/2, icon_h/2],
+   });
+	 var Robot = L.icon({
+       iconUrl: 'icon/Robot.png',
+       iconSize:     [icon_w, icon_h], // size of the icon
+       iconAnchor: [icon_w/2, icon_h/2],
+   });
+	 var Plant = L.icon({
+       iconUrl: 'icon/Plant.png',
+       iconSize:     [icon_w, icon_h], // size of the icon
+       iconAnchor: [icon_w/2, icon_h/2],
+   });
+
 
    var today = new Date("2017-04-24T00:00:00Z");
 
@@ -63,9 +109,29 @@ function showMAP(result_data,mapid,cat){
 
 		if ( (iri.indexOf(cat) != -1) || (cat=='all') ) {
 		//カスタマイズアイコンを利用する場合
-			var icon = userIcon2;
-		  if(iri.indexOf("化学") != -1){
-				icon = userIcon;
+			var icon = Kagaku;
+		  if(iri.indexOf("生活") != -1){
+				icon = Plant;
+			  //icon = Seikatsu;
+			}else if(iri.indexOf("運輸") != -1){
+				icon = Unyu;
+			}else if(iri.indexOf("化学") != -1){
+				icon = Kagaku;
+			}else if(iri.indexOf("紙") != -1){
+				icon = Kami;
+			}else if(iri.indexOf("構造") != -1){
+				icon = Kozo;
+			}else if(iri.indexOf("機械") != -1){
+				icon = Robot;
+				//icon = Kikai;
+			}else if(iri.indexOf("物理") != -1){
+				icon = Butsuri;
+			}else if(iri.indexOf("電気") != -1){
+				icon = Denki;
+			}else if(iri.indexOf("ロボット") != -1){
+				icon = Robot;
+			}else if(iri.indexOf("植物") != -1){
+				icon = Plant;
 			}
 
 			var mapMarker = L.marker([v_lat, v_long], {icon: icon});
